@@ -6,7 +6,6 @@
 
 .navegador {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: rgb(11, 61, 168);
     height: 10vw;
@@ -25,14 +24,33 @@
     color: white;
 }
 
-.logo {
-    width: 30%;
-    padding: 0 2vw;
+.cuerpo-interior .texto h1 {
+    font-size: 6vw;
 }
 
+.cuerpo-interior .texto .pfo-1 {
+    font-size: 2vw;
+}
 
+.cuerpo-interior .texto .pfo-2 {
+    font-size: 2vw;
+    text-align: justify;
+}
+
+.cuerpo-interior .texto h2 {
+    font-size: 2vw;
+}
 
 @media screen and (min-width: 1024px) {
+
+    .navegador {
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 30%;
+        padding: 0 2vw;
+    }
 
     .portada .img-1 {
         width: 100%;
@@ -60,26 +78,19 @@
         flex-direction: column;
         justify-content: space-between;
     }
-
-    .cuerpo-interior .texto h1 {
-        font-size: 6vw;
-    }
-
-    .cuerpo-interior .texto .pfo-1 {
-        font-size: 2vw;
-    }
-
-    .cuerpo-interior .texto .pfo-2 {
-        font-size: 2vw;
-        text-align: justify;
-    }
-
-    .cuerpo-interior .texto h2 {
-        font-size: 2vw;
-    }
 }
 
 @media screen and (max-width: 1024px) {
+
+    .navegador {
+        justify-content: center;
+    }
+
+    .logo {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
 
     .portada .img-1 {
         width: 100%;
