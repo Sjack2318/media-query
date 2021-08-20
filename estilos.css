@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(11, 61, 168);
+    height: 10vw;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 2.5vw;
+}
+
+.lista li {
+    padding: 2vw;
+    color: white;
+}
+
+.logo {
+    width: 30%;
+    padding: 0 2vw;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    .portada .img-1 {
+        width: 100%;
+    }
+
+    #cuerpo {
+        background-color: teal;
+        padding: 20vh 3vw;
+    }
+
+    .cuerpo-interior {
+        background-color: tomato;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .cuerpo-interior img {
+        height: 100%;
+    }
+
+    .cuerpo-interior .texto {
+        background-color: yellow;
+        height: 100%;
+        margin-left: 2vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .portada .img-1 {
+        width: 100%;
+        opacity: 0;
+    }
+
+    .portada {
+        width: 100%;
+        background-image: url(img/portada-2.jpg);
+        background-size: cover;
+    }
+}
