@@ -39,12 +39,10 @@
     }
 
     #cuerpo {
-        background-color: teal;
         padding: 20vh 3vw;
     }
 
     .cuerpo-interior {
-        background-color: tomato;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -56,9 +54,28 @@
     }
 
     .cuerpo-interior .texto {
-        background-color: yellow;
         height: 100%;
         margin-left: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cuerpo-interior .texto h1 {
+        font-size: 6vw;
+    }
+
+    .cuerpo-interior .texto .pfo-1 {
+        font-size: 2vw;
+    }
+
+    .cuerpo-interior .texto .pfo-2 {
+        font-size: 2vw;
+        text-align: justify;
+    }
+
+    .cuerpo-interior .texto h2 {
+        font-size: 2vw;
     }
 }
 
